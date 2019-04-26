@@ -1,0 +1,593 @@
+/* GENERAL STYLES */
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @media screen and (min-width: 600px) {
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
+  
+  h2 span {
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+h3 {
+    color: #e2574c;
+    font-size: 1.5rem;
+}
+
+  p {
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @media screen and (min-width: 600px) {
+    html, body {
+      font-size: 16px;
+    }
+  }
+  
+  /* NAVIGATION MENU */
+  /* _____________________________________________ */
+  
+  .header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 11px;
+  }
+
+  @media screen and (min-width: 600px) {
+    .header-container {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+  
+    .aloha-logo {
+      align-self: flex-start;
+      padding-bottom: 0.5rem;
+    }
+  
+      .aloha-logo img {
+        width: 120px;
+        max-width: 120px;
+        height: auto;
+      }
+  
+    .cart-logo {
+      align-self: flex-end;
+      padding-bottom: 0.5rem;
+    }
+  
+      .cart-logo img {
+        width: 50px;
+        max-width: 50px;;
+        height: auto;
+      }
+
+      @media screen and (min-width: 600px) {
+        .cart-logo img {
+          order: 3;
+        }
+      }
+  
+    .nav-menu {
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+      border-top: 1px solid #d7d7d7;
+      width: 100%;
+    }
+  
+    .nav-menu a:link {
+      color: #e2574c;
+      text-decoration: none;
+    }
+    
+    .nav-menu a:visited {
+      color: #e2574c;
+    }
+  
+    .nav-menu a:hover {
+      color: #b64036;
+    }
+  
+      .nav-menu ul {
+        margin: 0;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        font-family: 'Raleway';
+        color: #e2574c;
+        font-weight: 700;
+      }
+  
+        .nav-menu ul li {
+          display: inline-block;
+          font-size: 1rem;
+          font-weight: 500;
+          padding-right: 20px;
+          text-decoration: none;
+          list-style: none;
+        }
+  
+  /* BANNER SECTION */
+  /* _____________________________________________ */
+  
+  .banner-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url(images/banner-girl.png) bottom, url(images/flower-bkgd.jpg);
+    background-position: cover, cover;
+    background-repeat: no-repeat, repeat;
+    background-size: 120px, auto;
+    height: 400px;
+  }
+  
+    .banner-text {
+      display: inline-block;
+      padding: 0 35px;
+      color: #ffffff;
+    }
+  
+      .new-collection {
+        font-size: 1.5rem;
+      }
+  
+      .spring-summer {
+        font-size: 2.5rem;
+        font-style: normal;
+      }
+  
+  /* ABOUT SECTION */
+  /* _____________________________________________ */
+  
+  .about-section {
+  
+    align-items: center;
+  }
+  
+    .about-text {
+      text-align: center;
+      padding: 30px 15px;
+      font-size: 1.125rem;
+      line-height: 30px;
+    }
+  
+    @media screen and (min-width: 600px) {
+      .about-text {
+        padding: 50px 50px;
+      }
+    }
+  
+  /* PRODUCTS SECTION */
+  /* _____________________________________________ */
+  
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 7px;
+    height: 20cm;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .products {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      height: 900px;
+    }
+  }
+  
+    .products span {
+      font-family: Raleway;
+      color: #ffffff;
+      font-size: 1.6rem;
+    }
+  
+    @media screen and (min-width: 600px) {
+      .products span {
+        font-size: 2rem;
+      }
+    }
+  
+    .products a:link {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  
+    .products a:visited {
+      color: #ffffff;
+    }
+  
+    .products a:hover {
+      color: #b64036;
+    }
+  
+      .mens-cat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(images/mens-category.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+  
+        @media screen and (min-width: 600px) {
+          .mens-cat {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+          }
+        }
+  
+      .trends-cat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(images/trends-category.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+  
+        @media screen and (min-width: 600px) {
+          .trends-cat {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+          }
+        }
+  
+      .glasses-cat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(images/glasses-category.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+  
+        @media screen and (min-width: 600px) {
+          .glasses-cat {
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+          }
+        }
+  
+      .sale-cat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(images/sale-category.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+  
+        @media screen and (min-width: 600px) {
+          .sale-cat {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+          }
+        }
+  
+      .bags-cat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(images/bags-category.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+  
+          @media screen and (min-width: 600px) {
+            .bags-cat {
+              grid-column-start: 2;
+              grid-column-end: 3;
+              grid-row-start: 2;
+              grid-row-end: 3;
+            }
+          }
+  
+      .womens-cat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(images/womens-category.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 5;
+      }
+  
+          @media screen and (min-width: 600px) {
+            .womens-cat {
+              grid-column-start: 3;
+              grid-column-end: 5;
+              grid-row-start: 2;
+              grid-row-end: 3;
+            }
+          }
+  
+  /* PRODUCT SLIDESHOW */
+  /* _____________________________________________ */
+  
+  .product-container {
+    align-items: center;
+    height: 680px;
+  }
+  
+    .slideshow-text {
+      text-align: center;
+      padding: 30px 15px 15px 0;
+    }
+        .slideshow img {
+            margin: 0 35px;
+        }
+
+        .slideshow h3, .type, .price {
+            text-align: center;
+        }
+
+        .slideshow .type, .price {
+            color: #969696;
+            font-weight: 400;
+        }
+
+        .slideshow .type {
+            font-size: 0.8rem;
+        }
+
+        .slideshow .price {
+            font-size: 1rem;
+        }
+  
+      /* .stretch-knit-dress {
+        background-image: url(images/stretch-knit-dress.jpg);
+      }
+  
+      .cotton-blue-shirt {
+        background-image: url(images/cotton-blue-shirt.jpg);
+      }
+  
+      .checked-stretch-dress {
+        
+      } */
+  
+  /* CONTACT (WAVE BACKGROUND) SECTION */
+  /* _____________________________________________ */
+  
+  .contact {
+    background-image: url(images/wave-bkgd.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 360px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+    .contact p {
+      font-size: 1.2rem;
+      line-height: 2.12rem;
+    }
+  
+    .signup-content {
+      padding: 20px 10px 0 10px;
+      /* max-width: 720px; MEDIA Q */
+    }
+  
+      .signup-content form {
+        position: relative;
+        padding-top: 20px;
+        width: 350px;
+        margin: 0 auto;
+      }
+  
+        form .text-form {
+          font-family: 'Raleway';
+          padding: 12px 22px;
+          width: 80%;
+          /* min-width: 80%; */
+          border: 0;
+          border-radius: 100px;
+        }
+  
+        form .subscribe {
+          position: absolute;
+          padding: 8px 15px;
+          left: 70%;
+          width: 90px;
+          top: 40%;
+          border: 0;
+          border-radius: 100px;
+          background-color: #e2574c;
+          color: #ffffff;
+        }
+  
+  /* FOOTER SECTION */
+  /* _____________________________________________ */
+  
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    background-color: #242424;
+    color: #ffffff;
+}
+
+    .address {
+        padding-top: 40px;
+        align-self: center;
+        text-align: center;
+    }
+
+            .address p {
+                font-weight: 400;
+                font-family: 'Times New Roman';
+            }
+
+            .address a {
+                color: #ffffff;
+            }
+
+            .address a:hover {
+                color: #b64036;
+            }
+
+        .address-direction p {
+            padding-top: 15px;
+            line-height: 1px;
+            font-weight: 100;
+            color: #969696;
+        }
+
+    .social-media {
+        padding: 20px 0;
+        align-self: center;
+    }
+
+        .social-media i {
+            padding: 0 8px;
+            color: #ffffff;
+        }
+
+        .social-media i:hover {
+            color: #b64036;
+        }
+
+  /* .footer-section {
+    background-color: #242424;
+    height: 300px;
+    margin-top: 8px;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .footer-section {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  .footer-section p {
+    font-family: 'Times New Roman';
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  .footer-section a:link {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  .footer-section a:hover {
+    color: #b64036;
+  }
+  
+    .address {
+      padding-top: 50px;
+      padding-bottom: 15px;
+    }
+
+    .address-direction p {
+        color: #969696;
+      }
+    
+  
+    @media screen and (min-width: 600px) {
+        .address {
+            text-align: left;
+            width: 100%;
+        }
+
+    @media screen and (min-width: 800px) {
+        .address {
+            text-align: left;
+            margin: 0 350px;
+        }
+    }
+
+      .address p {
+        line-height: 6px;
+      }
+
+      @media screen and (min-width: 600px) {
+        .address p {
+          font-size: 1.12rem;
+        }
+      }
+
+      .address span p {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      @media screen and (min-width: 600px) {
+        .social-media {
+          align-self: flex-end;
+          margin: auto 0;
+          padding-right: 25px;
+        }
+      }
+
+      .social-media i {
+        color: #ffffff;
+        padding: 10px;
+      }
+  
+      .social-media i:hover {
+        color: #b64036;
+      }; */
