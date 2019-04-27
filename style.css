@@ -10,7 +10,7 @@ html {
     box-sizing: border-box;
     font-size: 14px;
   }
-  
+
   h1, h2, h3 {
     font-family: 'Playfair Display', serif;
     font-style: normal;
@@ -34,10 +34,10 @@ html {
     font-style: normal;
   }
   
-h3 {
+  h3 {
     color: #e2574c;
     font-size: 1.5rem;
-}
+  }
 
   p {
     font-family: 'Raleway';
@@ -154,10 +154,12 @@ h3 {
       display: inline-block;
       padding: 0 35px;
       color: #ffffff;
+      text-shadow: 0.5px 0.5px 0.5px #969696;
     }
   
       .new-collection {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 400;
       }
   
       .spring-summer {
@@ -169,7 +171,6 @@ h3 {
   /* _____________________________________________ */
   
   .about-section {
-  
     align-items: center;
   }
   
@@ -201,19 +202,34 @@ h3 {
     .products {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      height: 900px;
+      height: 600px;
     }
   }
-  
+
+  @media screen and (min-width: 1240px) {
+    .products {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      height: 700px;
+    }
+  }
+
     .products span {
       font-family: Raleway;
       color: #ffffff;
+      text-shadow: 0.5px 0.5px 0.5px #969696;
       font-size: 1.6rem;
     }
   
     @media screen and (min-width: 600px) {
       .products span {
         font-size: 2rem;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      .products span {
+        font-size: 2.2rem;
       }
     }
   
@@ -395,18 +411,6 @@ h3 {
             font-size: 1rem;
         }
   
-      /* .stretch-knit-dress {
-        background-image: url(images/stretch-knit-dress.jpg);
-      }
-  
-      .cotton-blue-shirt {
-        background-image: url(images/cotton-blue-shirt.jpg);
-      }
-  
-      .checked-stretch-dress {
-        
-      } */
-  
   /* CONTACT (WAVE BACKGROUND) SECTION */
   /* _____________________________________________ */
   
@@ -414,9 +418,11 @@ h3 {
     background-image: url(images/wave-bkgd.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
+    margin-bottom: 10px;
     height: 360px;
     text-align: center;
     color: #ffffff;
+    text-shadow: 0.5px 0.5px 0.5px #969696;
   }
   
     .contact p {
@@ -428,7 +434,7 @@ h3 {
       padding: 20px 10px 0 10px;
       /* max-width: 720px; MEDIA Q */
     }
-  
+ 
       .signup-content form {
         position: relative;
         padding-top: 20px;
@@ -499,6 +505,10 @@ h3 {
         align-self: center;
     }
 
+      .social-media p {
+        display: none;
+      }
+
         .social-media i {
             padding: 0 8px;
             color: #ffffff;
@@ -507,87 +517,3 @@ h3 {
         .social-media i:hover {
             color: #b64036;
         }
-
-  /* .footer-section {
-    background-color: #242424;
-    height: 300px;
-    margin-top: 8px;
-    text-align: center;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .footer-section {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  
-  .footer-section p {
-    font-family: 'Times New Roman';
-    color: #ffffff;
-    font-size: 1rem;
-  }
-  
-  .footer-section a:link {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-  
-  .footer-section a:hover {
-    color: #b64036;
-  }
-  
-    .address {
-      padding-top: 50px;
-      padding-bottom: 15px;
-    }
-
-    .address-direction p {
-        color: #969696;
-      }
-    
-  
-    @media screen and (min-width: 600px) {
-        .address {
-            text-align: left;
-            width: 100%;
-        }
-
-    @media screen and (min-width: 800px) {
-        .address {
-            text-align: left;
-            margin: 0 350px;
-        }
-    }
-
-      .address p {
-        line-height: 6px;
-      }
-
-      @media screen and (min-width: 600px) {
-        .address p {
-          font-size: 1.12rem;
-        }
-      }
-
-      .address span p {
-        padding-top: 15px;
-        padding-bottom: 15px;
-      }
-
-      @media screen and (min-width: 600px) {
-        .social-media {
-          align-self: flex-end;
-          margin: auto 0;
-          padding-right: 25px;
-        }
-      }
-
-      .social-media i {
-        color: #ffffff;
-        padding: 10px;
-      }
-  
-      .social-media i:hover {
-        color: #b64036;
-      }; */
