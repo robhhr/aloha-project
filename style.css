@@ -65,43 +65,74 @@ html {
     .header-container {
       display: flex;
       flex-wrap: nowrap;
+      padding: 20px 100px;
     }
   }
-  
+
     .aloha-logo {
       align-self: flex-start;
       padding-bottom: 0.5rem;
     }
-  
+    
+    @media screen and (min-width: 600px) {
+      .aloha-logo {
+        align-self: flex-start;
+        order: 1;
+      }
+    }
       .aloha-logo img {
         width: 120px;
         max-width: 120px;
         height: auto;
       }
-  
+
+      @media screen and (min-width: 600px) {
+        .aloha-logo img {
+          align-self: center;
+          width: 150px;
+          max-width: 100%;
+        }
+      }
+
     .cart-logo {
       align-self: flex-end;
       padding-bottom: 0.5rem;
     }
   
+    @media screen and (min-width: 600px) {
+      .cart-logo {
+        order: 3;
+      }
+    }
+
       .cart-logo img {
         width: 50px;
         max-width: 50px;;
         height: auto;
       }
 
-      @media screen and (min-width: 600px) {
+      /* @media screen and (min-width: 600px) {
         .cart-logo img {
-          order: 3;
-        }
-      }
-  
+          align-self: center;
+          width: 80px;
+          max-width: 100%;
+      } */
+
     .nav-menu {
       justify-content: center;
       align-self: center;
       text-align: center;
       border-top: 1px solid #d7d7d7;
       width: 100%;
+    }
+
+    @media screen and (min-width: 600px) {
+      .nav-menu {
+        border: none;
+        width: auto;
+        padding-right: 50px;
+        order: 2;
+      }
     }
   
     .nav-menu a:link {
@@ -134,7 +165,7 @@ html {
           text-decoration: none;
           list-style: none;
         }
-  
+ 
   /* BANNER SECTION */
   /* _____________________________________________ */
   
@@ -150,8 +181,14 @@ html {
     height: 400px;
   }
   
+  @media screen and (min-width: 600px) {
+    .banner-section {
+      height: 500px;
+    }
+  }
+
     .banner-text {
-      display: inline-block;
+      /* display: inline-block; */
       padding: 0 35px;
       color: #ffffff;
       text-shadow: 0.5px 0.5px 0.5px #969696;
@@ -210,7 +247,7 @@ html {
     .products {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      height: 700px;
+      height: 800px;
     }
   }
 
@@ -386,12 +423,25 @@ html {
     height: 680px;
   }
   
+  @media screen and (min-width: 600px) {
+    .product-container {
+      margin: 0 auto;
+      width: 75%;
+    }
+  }
+
     .slideshow-text {
       text-align: center;
       padding: 30px 15px 15px 0;
     }
         .slideshow img {
             margin: 0 35px;
+        }
+
+        @media screen and (min-width: 600px) {
+          .slideshow img {
+            width: 250px;
+          }
         }
 
         .slideshow h3, .type, .price {
@@ -424,6 +474,13 @@ html {
     color: #ffffff;
     text-shadow: 0.5px 0.5px 0.5px #969696;
   }
+
+  @media screen and (min-width: 600px) {
+    .contact {
+      background-size: cover;
+      background-position: bottom;
+    }
+  }
   
     .contact p {
       font-size: 1.2rem;
@@ -432,7 +489,12 @@ html {
   
     .signup-content {
       padding: 20px 10px 0 10px;
-      /* max-width: 720px; MEDIA Q */
+    }
+
+    @media screen and (min-width: 1240px) {
+      .signup-content {
+        padding: 20px 450px;
+      }
     }
  
       .signup-content form {
@@ -480,6 +542,12 @@ html {
         text-align: center;
     }
 
+    @media screen and (min-width: 600px) {
+      .address {
+        text-align: left;
+        align-self: flex-start;
+      }
+    }
             .address p {
                 font-weight: 400;
                 font-family: 'Times New Roman';
@@ -505,9 +573,21 @@ html {
         align-self: center;
     }
 
+    @media screen and (min-width: 600px) {
+      .social-media {
+        text-align: center;
+        align-self: flex-end;
+      }
+    }
       .social-media p {
         display: none;
       }
+
+      /* @media screen and (min-width: 600px) {
+        .social-media p {
+          display: flex;
+        }
+      } */
 
         .social-media i {
             padding: 0 8px;
