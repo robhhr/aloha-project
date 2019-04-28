@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-</head>
+    </head>
 
 <body>
 
@@ -24,10 +24,10 @@
         </div>
         <nav class="nav-menu">
             <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#products">SHOP</a></li>
-                <li><a href="#slideshow">FEATURED</a></li>
-                <li><a href="#form">UPDATES</a></li>
+                <li><a href="#about" class="scroll">ABOUT</a></li>
+                <li><a href="#products" class="scroll">SHOP</a></li>
+                <li><a href="#slideshow" class="scroll">FEATURED</a></li>
+                <li><a href="#form" class="scroll">UPDATES</a></li>
             </ul>
         </nav>
     </header>
@@ -136,24 +136,27 @@
             <h2>Sign-up for <span>Updates</span></h2>
             <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style
                 tips from our blog. Unsubscribe at any time.</p>
-            <form>
-                <input class="text-form" type="text" placeholder="Your Email" name="e-mail">
-                <input class="subscribe" type="submit" value="Subscribe">
+
+            <form name="form" onsubmit="subscribe()">
+                <input class="text-form" type="email" name="email" placeholder="Your Email">
+                <input class="subscribe" type="submit" name="submit" value="Subscribe">
             </form>
         </div>
     </section>
 
     <!-- FOOTER SECTION -->
     <footer class="footer-section">
-        <div class="address">
-            <p>&copy; 2019 Aloha Apparel Co.</p>
-            <p>Powered by HTML and CSS</p>
-            <span>
-                <p>604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
-            </span>
-            <div class="address-direction">
-                <p>1490 W Broadway</p>
-                <p>Vancouver, BC, Canada</p>
+        <div class="footer-container">
+            <div class="address">
+                <p>&copy; 2019 Aloha Apparel Co.</p>
+                <p>Powered by HTML and CSS</p>
+                <span>
+                    <p>604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
+                </span>
+                <div class="address-direction">
+                    <p>1490 W Broadway</p>
+                    <p>Vancouver, BC, Canada</p>
+                </div>
             </div>
         </div>
         <div class="social-media">
@@ -166,8 +169,8 @@
     </footer>
 
 <!-- JavaScript -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
+    <script src="JS/flickity.js""></script>
+    <script src="JS/main.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,5 @@
 /* GENERAL STYLES */
 
-html {
-    scroll-behavior: smooth;
-  }
-  
   html, body {
     margin: 0;
     padding: 0;
@@ -58,6 +54,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    white-space: nowrap;
     padding: 11px;
   }
 
@@ -65,6 +62,7 @@ html {
     .header-container {
       display: flex;
       flex-wrap: nowrap;
+      white-space: nowrap;
       padding: 20px 100px;
     }
   }
@@ -82,15 +80,16 @@ html {
     }
       .aloha-logo img {
         width: 120px;
-        max-width: 120px;
+        min-width: 120px;
         height: auto;
+        padding-left: 15px;
       }
 
       @media screen and (min-width: 600px) {
         .aloha-logo img {
           align-self: center;
           width: 150px;
-          max-width: 100%;
+          max-width: 150px;
         }
       }
 
@@ -219,8 +218,14 @@ html {
     }
   
     @media screen and (min-width: 600px) {
+      .signup-content {
+        padding: 50px 200px;
+      }
+    }
+
+    @media screen and (min-width: 1240px) {
       .about-text {
-        padding: 50px 50px;
+        padding: 50px 450px;
       }
     }
   
@@ -545,9 +550,17 @@ html {
     @media screen and (min-width: 600px) {
       .address {
         text-align: left;
-        align-self: flex-start;
       }
     }
+
+      @media screen and (min-width: 600px) {
+        .footer-container {
+          margin: 0 auto;
+          max-width: 100%;
+          ;
+        }
+      }
+
             .address p {
                 font-weight: 400;
                 font-family: 'Times New Roman';
@@ -582,12 +595,6 @@ html {
       .social-media p {
         display: none;
       }
-
-      /* @media screen and (min-width: 600px) {
-        .social-media p {
-          display: flex;
-        }
-      } */
 
         .social-media i {
             padding: 0 8px;
