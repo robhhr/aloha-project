@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-">
     <title>Aloha Apparel Co.</title>
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="CSS/flickity.css">
     <link rel="reset" href="css/reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts/fonts.css">
@@ -75,59 +75,61 @@
 
     <!-- PRODUCT SLIDESHOW -->
     <section id="slideshow" class="product-container">
-        <div class="slideshow-text">
-            <h2>Most-Loved <span>Products</span></h2>
+        <div class="slideshow-content">
+            <div class="slideshow-text">
+                <h2>Most-Loved <span>Products</span></h2>
+            </div>
+            <div class="slideshow" data-flickity='{ "cellAlign": "center", "freeScroll": false, "contain": true, "prevNextButtons": false }' >
+                <div class="stretch-knit-dress">
+                    <img src="images/stretch-knit-dress.jpg" alt="">
+                    <p class="type">DRESSES</p>
+                    <h3>Stretch Knit Dress</h3>
+                    <p class="price">$169.00</p>
+                </div>
+                <div class="cotton-blue-shirt">
+                    <img src="images/cotton-blue-shirt.jpg" alt="">
+                    <p class="type">SHIRTS</p>
+                    <h3>Cotton Blue Shirt</h3>
+                    <p class="price">$89.00</p>
+                </div>
+                <div class="checked-stretch-dress">
+                    <img src="images/checked-stretch-dress.jpg" alt="">
+                    <p class="type">DRESSES</p>
+                    <h3>Checked Stretch Dress</h3>
+                    <p class="price">$129.00</p>
+                </div>
+                <div class="blue-hipster-backpack">
+                    <img src="images/blue-hipster-backpack.jpg" alt="">
+                    <p class="type">BAGS</p>
+                    <h3>Blue Hispter Backpack</h3>
+                    <p class="price">$69.00</p>
+                </div>
+                <div class="denim-overall-shorts">
+                    <img src="images/demin-overall-shorts.jpg" alt="">
+                    <p class="type">DENIM</p>
+                    <h3>Denim Overall Shorts</h3>
+                    <p class="price">$89.00</p>
+                </div>
+                <div class="pink-dotted-girl">
+                    <img src="images/pink-dotted-dress.jpg" alt="">
+                    <p class="type">DRESSES</p>
+                    <h3>Pink Dotted Girl</h3>
+                    <p class="price">$99.00</p>
+                </div>
+                <div class="blue-silk-dress">
+                    <img src="images/blue-silk-dress.jpg" alt="">
+                    <p class="type">DRESSES</p>
+                    <h3>Blue Silk Dress</h3>
+                    <p class="price">$119.00</p>
+                </div>
+                <div class="cotton-yellow-tshirt">
+                    <img src="images/cotton-yellow-tshirt.jpg" alt="">
+                    <p class="type">SHIRTS</p>
+                    <h3>Cotton Yellow Shirt</h3>
+                    <p class="price">$39.00</p>
+                </div>
+            </div>
         </div>
-        <div class="slideshow" data-flickity='{ "cellAlign": "center", "freeScroll": false, "contain": true, "prevNextButtons": false }' >
-            <div class="stretch-knit-dress">
-                <img src="images/stretch-knit-dress.jpg" alt="">
-                <p class="type">DRESSES</p>
-                <h3>Stretch Knit Dress</h3>
-                <p class="price">$169.00</p>
-            </div>
-            <div class="cotton-blue-shirt">
-                <img src="images/cotton-blue-shirt.jpg" alt="">
-                <p class="type">SHIRTS</p>
-                <h3>Cotton Blue Shirt</h3>
-                <p class="price">$89.00</p>
-            </div>
-            <div class="checked-stretch-dress">
-                <img src="images/checked-stretch-dress.jpg" alt="">
-                <p class="type">DRESSES</p>
-                <h3>Checked Stretch Dress</h3>
-                <p class="price">$129.00</p>
-            </div>
-            <div class="blue-hipster-backpack">
-                <img src="images/blue-hipster-backpack.jpg" alt="">
-                <p class="type">BAGS</p>
-                <h3>Blue Hispter Backpack</h3>
-                <p class="price">$69.00</p>
-            </div>
-            <div class="denim-overall-shorts">
-                <img src="images/demin-overall-shorts.jpg" alt="">
-                <p class="type">DENIM</p>
-                <h3>Denim Overall Shorts</h3>
-                <p class="price">$89.00</p>
-            </div>
-            <div class="pink-dotted-girl">
-                <img src="images/pink-dotted-dress.jpg" alt="">
-                <p class="type">DRESSES</p>
-                <h3>Pink Dotted Girl</h3>
-                <p class="price">$99.00</p>
-            </div>
-            <div class="blue-silk-dress">
-                <img src="images/blue-silk-dress.jpg" alt="">
-                <p class="type">DRESSES</p>
-                <h3>Blue Silk Dress</h3>
-                <p class="price">$119.00</p>
-            </div>
-            <div class="cotton-yellow-tshirt">
-                <img src="images/cotton-yellow-tshirt.jpg" alt="">
-                <p class="type">SHIRTS</p>
-                <h3>Cotton Yellow Shirt</h3>
-                <p class="price">$39.00</p>
-            </div>
-            
     </section>
 
     <!-- CONTACT (WAVE BACKGROUND) SECTION -->
@@ -136,7 +138,6 @@
             <h2>Sign-up for <span>Updates</span></h2>
             <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style
                 tips from our blog. Unsubscribe at any time.</p>
-
             <form name="form" onsubmit="subscribe()">
                 <input class="text-form" type="email" name="email" placeholder="Your Email">
                 <input class="subscribe" type="submit" name="submit" value="Subscribe">
@@ -158,13 +159,15 @@
                     <p>Vancouver, BC, Canada</p>
                 </div>
             </div>
-        </div>
-        <div class="social-media">
-            <a href="#"><i class="fab fa-facebook-f"></i><p>Facebook</p></a>
-            <a href="#"><i class="fab fa-twitter"></i><p>Twitter</p></a>
-            <a href="#"><i class="fab fa-instagram"></i><p>Instagram</p></a>
-            <a href="#"><i class="fab fa-pinterest"></i><p>Pinterest</p></a>
-            <a href="#"><i class="fab fa-google-plus-g"></i><p>Google +</p></a>
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.facebook.com/LearnAtRED/" target="_blank"><i class="fab fa-facebook-f"></i><p>Facebook</p></a></li>
+                    <li><a href="https://twitter.com/redacademy" target="_blank"><i class="fab fa-twitter"></i><p>Twitter</p></a></li>
+                    <li><a href="https://www.instagram.com/red.academy/" target="_blank"><i class="fab fa-instagram"></i><p>Instagram</p></a></li>
+                    <li><a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest"></i><p>Pinterest</p></a></li>
+                    <li><a href="https://developers.google.com/+/web/" target="_blank"><i class="fab fa-google-plus-g"></i><p>Google +</p></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 
