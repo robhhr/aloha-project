@@ -453,18 +453,34 @@
 
   /* PRODUCT SLIDESHOW */
   /* _____________________________________________ */
-  
-  .product-container {
-    height: 700px;
-  }
 
-    .slideshow-container {
-      margin: 0 auto;
+    .main-carousel  {
+      text-align: center;
+      height: 600px;
+    }
+
+    .carousel-cell {
       width: 100%;
+    }
+
+    @media screen and (min-width: 600px) {
+      .carousel-cell {
+        width: 50%;
+      }
+    }
+
+    @media screen and (min-width: 1240px) {
+      .carousel-cell {
+        width: 25%;
+      }
     }
 
     .slideshow-text h2, span {
       text-align: center;
+    }
+
+     .flickity-page-dots {
+      bottom: 70px;
     }
 
     .slideshow-text {
@@ -541,7 +557,6 @@
           font-family: 'Raleway';
           padding: 12px 22px;
           width: 80%;
-
           border: 0;
           border-radius: 100px;
         }
