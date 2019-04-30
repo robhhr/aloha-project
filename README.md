@@ -8,9 +8,9 @@
 
 <p>There are 3 main breakpoints:
 
-..*Mobile (< 600px)
-...*Tablet (> 600px)
-..*Desktop (1240px)
+- Mobile (< 600px)
+- Tablet (> 600px)
+- Desktop (1240px)
 
 Not all the sections change on every breakpoint, but some areas have changes in every breakpoint; navigation menu, hero image & texts. </p>
 
@@ -41,8 +41,8 @@ The languages used were:
 3. Feel free to visualize the coding behind the website by opening the CSS and JS files
 4. The website has 3 main size breakpoints:
 
-  ..*Mobile
-  ..*Tablet
-  ..*Desktop
+  - Mobile
+  - Tablet
+  - Desktop
 
 To navigate to each breakpoint you need to resize your website accordingly.
