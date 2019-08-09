@@ -4,10 +4,7 @@
     justify-content: space-between;
     white-space: nowrap;
     padding: 10px 0;
-  }
-  
-@include tablet-mode {
-    .header-container {
+    @include tablet-mode {
         display: flex;
         flex-wrap: nowrap;
         white-space: nowrap;
@@ -15,113 +12,94 @@
         max-width: 100%;
     }
 }
-  
-  .aloha-logo {
+
+.aloha-logo {
     align-self: flex-start;
     padding-bottom: 0.5rem;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .aloha-logo {
-      align-self: flex-start;
-      order: 1;
+    @include tablet-mode {
+        align-self: flex-start;
+        order: 1;
     }
-  }
-  
-  .aloha-logo img {
+}
+
+.aloha-logo img {
     width: 120px;
     min-width: 120px;
     height: auto;
     padding: 0 15px;
-  }
-  
-  @media screen and (min-width: 1240px) {
-    .aloha-logo img {
-      align-self: center;
-      width: 150px;
-      max-width: 150px;
-      padding-left: 120px;
+    @include tablet-mode {
+        align-self: center;
+        width: 150px;
+        max-width: 150px;
+        padding-left: 120px;
     }
-  }
-  
-  .cart-logo {
+}
+
+.cart-logo {
     align-self: flex-end;
     padding-bottom: 0.5rem;
     padding-right: 15px;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .cart-logo {
-      order: 3;
+    @include tablet-mode {
+        order: 3;
     }
-  }
-  
-  @media screen and (min-width: 1240px) {
-    .cart-logo {
-      padding-right: 120px;
-      order: 3;
+    @include desktop-mode {
+        padding-right: 120px;
+        order: 3;
     }
-  }
-  
-  .cart-logo img {
+}
+
+.cart-logo img {
     width: 50px;
     max-width: 50px;
     ;
     height: auto;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .cart-logo img {
-      width: 65px;
-      max-width: 65px;
+    @include tablet-mode {
+        width: 65px;
+        max-width: 65px;
     }
-  }
-  
-  .nav-menu {
-    justify-content: center;
-    align-self: center;
+}
+
+.nav-menu {
+    margin: 0 auto;
     text-align: center;
-    width: 100%;
+    width: 95%;
     border-top: 1px solid #d7d7d7;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .nav-menu {
-      padding-bottom: 15px;
-      border: none;
-      width: auto;
-      padding-right: 50px;
-      order: 2;
+    @include tablet-mode {
+        padding-bottom: 15px;
+        border: none;
+        width: auto;
+        padding-right: 50px;
+        order: 2;
     }
-  }
-  
-  .nav-menu a:link {
+}
+
+.nav-menu a:link {
     color: #e2574c;
     text-decoration: none;
-  }
-  
-  .nav-menu a:visited {
+}
+
+.nav-menu a:visited {
     color: #e2574c;
-  }
-  
-  .nav-menu a:hover {
+}
+
+.nav-menu a:hover {
     color: #b64036;
-  }
-  
-  .nav-menu ul {
+}
+
+.nav-menu ul {
     margin: 0;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
     font-family: 'Raleway';
     color: #e2574c;
     font-weight: 700;
-  }
-  
-  .nav-menu ul li {
+}
+
+.nav-menu ul li {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 500;
-    padding-right: 20px;
+    padding: 0 12px;
     text-decoration: none;
     list-style: none;
-  }
+}

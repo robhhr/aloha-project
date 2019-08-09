@@ -1,57 +1,53 @@
 .contact {
-    background: linear-gradient(rgba(0, 0, 0, .20) 0, rgba(0, 0, 0, .20)), url(/images/wave-bkgd.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../../images/wave-bkgd.jpg);
     background-position: bottom;
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
-    height: 360px;
+    height: 320px;
     text-align: center;
-    color: #ffffff;
-    text-shadow: 0.5px 0.5px 0.5px #969696;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .contact {
+    color: $white;
+    text-shadow: 0.5px 0.5px 0.5px $shadow;
+    @include tablet-mode {
       background-size: cover;
       background-position: bottom;
     }
   }
   
-  .contact p {
-    font-size: 1.2rem;
-    line-height: 2.12rem;
-  }
-  
-  .signup-content {
-    padding: 20px 10px 0 10px;
-  }
-  
-  @media screen and (min-width: 1240px) {
-    .signup-content {
-      padding: 20px 550px;
+.signup-content {
+    padding: 0 10px;
+    p {
+      font-size: 16px;
+      line-height: 2;
     }
-  }
-  
-  @media screen and (min-width: 600px) {
-    .signup-content {
+    @include tablet-mode {
       padding: 20px 100px;
     }
-  }
-  
-  .signup-content form {
+    @include desktop-mode {
+      padding: 20px 550px;
+    }
+}
+
+.signup-content form {
     position: relative;
     padding-top: 20px;
     width: 350px;
     margin: 0 auto;
-  }
-  
-  form .text-form {
+}
+
+.signup-title {
+    padding-bottom: 25px;
+}
+
+form .text-form {
     font-family: 'Raleway';
     padding: 12px 22px;
     width: 80%;
     border: 0;
     border-radius: 100px;
-  }
-  
-  form .subscribe {
+}
+
+form .subscribe {
     position: absolute;
     padding: 8px 15px;
     left: 70%;
@@ -61,4 +57,4 @@
     border-radius: 100px;
     background-color: #e2574c;
     color: #ffffff;
-  }
+}

@@ -3,52 +3,41 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .15) 0, rgba(0, 0, 0, .15)), url(/images/banner-girl.png), url(/images/flower-bkgd.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .25) 0, rgba(0, 0, 0, .25)), url(../../images/banner-girl.png), url(../../images/flower-bkgd.jpg);
     background-size: auto, auto, auto;
     background-size: cover, 11rem;
     background-position: bottom, bottom, center;
     background-repeat: no-repeat, no-repeat, repeat-x;
     height: 450px;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .banner-section {
+    @include tablet-mode {
       height: 500px;
       background-size: cover, 12rem;
     }
-  }
-  
-  @media screen and (min-width: 1240px) {
-    .banner-section {
+    @include desktop-mode {
       height: 600px;
       background-size: cover, 14rem;
     }
-  }
-  
-  .banner-text {
+}
+
+.banner-text {
     padding: 0 80px;
     color: #ffffff;
     text-shadow: 0.5px 0.5px 0.5px #969696;
-  }
+}
   
-  .new-collection {
+.new-collection {
     font-size: 1.2rem;
     font-weight: 400;
-  }
-  
-  @media screen and (min-width: 1240px) {
-    .new-collection {
+    padding-bottom: 20px;
+    @include desktop-mode {
       font-size: 1.5rem;
     }
-  }
-  
-  .spring-summer {
-    font-size: 2.5rem;
+}
+
+.spring-summer {
+    font-size: 2.2rem;
     font-style: normal;
-  }
-  
-  @media screen and (min-width: 1240px) {
-    .spring-summer {
+    @include desktop-mode {
       font-size: 3.5rem;
     }
-  }
+}

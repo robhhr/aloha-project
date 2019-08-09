@@ -1,213 +1,182 @@
 .about-section {
+    height: 250px;
+    display: flex;
     align-items: center;
   }
   
-  .about-text {
+.about-text {
     text-align: center;
-    padding: 30px 15px;
+    padding: 0 25px;
     font-size: 1.125rem;
     line-height: 30px;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .signup-content {
-      padding: 50px 200px;
+    @include desktop-mode {
+      padding: 0 450px;
     }
-  }
-  
-  @media screen and (min-width: 1240px) {
-    .about-text {
-      padding: 50px 450px;
+    h1 {
+      padding-bottom: 20px;
     }
-  }
-  
-  /* PRODUCTS SECTION */
-  /* _____________________________________________ */
-  
+}
+
+/* PRODUCTS SECTION */
+/* _____________________________________________ */
+
   .products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 7px;
-    height: 25cm;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .products {
+    height: 850px;
+    @include tablet-mode {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      height: 15cm;
+      height: 800px;
     }
-  }
-  
-  @media screen and (min-width: 1240px) {
-    .products {
+    @include desktop-mode {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
       height: 800px;
     }
   }
-  
-  .products span {
+
+.products span {
     font-family: Raleway;
     color: #ffffff;
     text-shadow: 0.5px 0.5px 0.5px #969696;
-    font-size: 1.6rem;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .products span {
-      font-size: 2rem;
+    font-size: 24px;
+    @include tablet-mode {
+      font-size: 28px
     }
-  }
-  
-  @media screen and (min-width: 600px) {
-    .products span {
-      font-size: 2.2rem;
+    @include desktop-mode {
+      font-size: 32px;
     }
-  }
-  
-  .products a:link {
+    a:hover {
+      color: #b64036;
+    }
+}
+
+.products a:link {
     color: #ffffff;
     text-decoration: none;
-  }
+}
   
-  .products a:visited {
+.products a:visited {
     color: #ffffff;
-  }
+}
   
-  .products a:hover {
+.products a:hover {
     color: #b64036;
-  }
+}
   
-  .mens-cat {
+.mens-cat {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, .20) 0, rgba(0, 0, 0, .20)), url(/images/mens-category.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .20) 0, rgba(0, 0, 0, .20)), url(../../images/mens-category.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .mens-cat {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
+    @include tablet-mode {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
-  }
-  
-  .trends-cat {
+}
+
+.trends-cat {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, .20) 0, rgba(0, 0, 0, .20)), url(/images/trends-category.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .20) 0, rgba(0, 0, 0, .20)), url(../../images/trends-category.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .trends-cat {
-      grid-column-start: 3;
-      grid-column-end: 4;
-      grid-row-start: 1;
-      grid-row-end: 2;
+    @include tablet-mode {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
-  }
-  
-  .glasses-cat {
+}
+
+.glasses-cat {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, .20) 0, rgba(0, 0, 0, .20)), url(/images/glasses-category.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .20) 0, rgba(0, 0, 0, .20)), url(../../images/glasses-category.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .glasses-cat {
-      grid-column-start: 4;
-      grid-column-end: 5;
-      grid-row-start: 1;
-      grid-row-end: 2;
+    @include tablet-mode {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
-  }
-  
-  .sale-cat {
+}
+
+.sale-cat {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, .20) 0, rgba(0, 0, 0, .20)), url(./images/sale-category.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .20) 0, rgba(0, 0, 0, .20)), url(../../images/sale-category.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .sale-cat {
-      grid-column-start: 1;
-      grid-column-end: 2;
-      grid-row-start: 2;
-      grid-row-end: 3;
+    @include tablet-mode {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
-  }
-  
-  .bags-cat {
+}
+
+.bags-cat {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, .20) 0, rgba(0, 0, 0, .20)), url(/images/bags-category.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .20) 0, rgba(0, 0, 0, .20)), url(../../images/bags-category.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .bags-cat {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end: 3;
+    @include tablet-mode {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
-  }
-  
-  .womens-cat {
+}
+
+.womens-cat {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, .20) 0, rgba(0, 0, 0, .20)), url(/images/womens-category.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .20) 0, rgba(0, 0, 0, .20)), url(../../images/womens-category.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
-  }
-  
-  @media screen and (min-width: 600px) {
-    .womens-cat {
-      grid-column-start: 3;
-      grid-column-end: 5;
-      grid-row-start: 2;
-      grid-row-end: 3;
+    @include tablet-mode {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
-  }
+}
