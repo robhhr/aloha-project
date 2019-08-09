@@ -1,0 +1,31 @@
+{
+  "name": "project-aloha",
+  "version": "1.0.0",
+  "description": "<h3 align=\"center\">\r   <img src=\"http://designedgecanada.com/wp-content/uploads/2018/03/b9e11f0d-e030-447e-808a-3d0f6ed64084-620x130.png\" alt=\"RED Academy\" width=\"200\">\r </h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robhhr/aloha-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robhhr/aloha-project/issues"
+  },
+  "homepage": "https://github.com/robhhr/aloha-project#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-prettyerror": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0",
+    "gulp-uglifycss": "^1.1.0"
+  }
+}

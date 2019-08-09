@@ -29,4 +29,4 @@ function subscribe() {
     } else {
         alert('Thanks for subscribing');
     }
-}
+};
