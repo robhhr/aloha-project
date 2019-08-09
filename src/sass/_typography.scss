@@ -1,0 +1,34 @@
+h1, h2, h3 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+@media screen and (min-width: 600px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+
+h2 span {
+  font-weight: bold;
+  font-style: normal;
+}
+
+h3 {
+  color: #e2574c;
+  font-size: 1.8rem;
+}
+
+p {
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+}

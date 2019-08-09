@@ -1,0 +1,54 @@
+.main-carousel {
+    text-align: center;
+    height: 600px;
+  }
+  
+  .carousel-cell {
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .carousel-cell {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 1240px) {
+    .carousel-cell {
+      width: 25%;
+    }
+  }
+  
+  .slideshow-text h2,
+  span {
+    text-align: center;
+  }
+  
+  .flickity-page-dots {
+    bottom: 70px;
+  }
+  
+  .slideshow-text {
+    padding: 30px 15px 15px 0;
+  }
+  
+  .slideshow h3,
+  .type,
+  .price {
+    text-align: center;
+  }
+  
+  .slideshow .type,
+  .price {
+    color: #969696;
+    font-weight: 400;
+  }
+  
+  .slideshow .type {
+    font-size: 0.8rem;
+  }
+  
+  .slideshow .price {
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
