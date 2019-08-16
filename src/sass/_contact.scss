@@ -11,6 +11,9 @@
     @include tablet-mode {
       background-position: bottom;
     }
+    @include desktop-mode {
+      background-size: cover;
+    }
   }
   
 .signup-content {
@@ -18,13 +21,19 @@
     p {
       font-size: 16px;
       line-height: 2;
+      margin: 0 auto;
+      @include desktop-mode {
+        margin: 0 auto;
+        width: 70%;
+      }
     }
     @include tablet-mode {
       margin: 0 auto;
       width: 65%;
     }
     @include desktop-mode {
-      padding: 20px 550px;
+      margin: 0 auto;
+      width: 50%;
     }
 }
 

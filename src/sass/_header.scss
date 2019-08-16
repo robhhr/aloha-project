@@ -13,6 +13,9 @@
         width: 90%;
         margin: 0 auto;
     }
+    @include desktop-mode {
+        width: 95%;
+    }
 }
 
 .aloha-logo {
@@ -44,7 +47,6 @@
         order: 3;
     }
     @include desktop-mode {
-        padding-right: 120px;
         order: 3;
     }
 }
@@ -52,7 +54,6 @@
 .cart-logo img {
     width: 50px;
     max-width: 50px;
-    ;
     height: auto;
     @include tablet-mode {
         width: 65px;
