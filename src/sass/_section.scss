@@ -9,11 +9,20 @@
     padding: 0 25px;
     font-size: 1.125rem;
     line-height: 30px;
-    @include desktop-mode {
-      padding: 0 450px;
+    @include tablet-mode {
+      margin: 0 auto;
     }
     h1 {
       padding-bottom: 20px;
+      @include tablet-mode {
+        font-size: 36px;
+      }
+    }
+    p {
+      @include tablet-mode {
+        width: 70%;
+        margin: 0 auto;
+      }
     }
 }
 
@@ -29,7 +38,7 @@
     @include tablet-mode {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      height: 800px;
+      height: 400px;
     }
     @include desktop-mode {
       grid-template-columns: repeat(4, 1fr);
@@ -44,13 +53,15 @@
     text-shadow: 0.5px 0.5px 0.5px #969696;
     font-size: 24px;
     @include tablet-mode {
-      font-size: 28px
+      font-size: 28px;
     }
     @include desktop-mode {
       font-size: 32px;
     }
-    a:hover {
-      color: #b64036;
+    a {
+      &:hover {
+        color: $hover;
+      }
     }
 }
 

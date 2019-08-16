@@ -9,7 +9,6 @@
     color: $white;
     text-shadow: 0.5px 0.5px 0.5px $shadow;
     @include tablet-mode {
-      background-size: cover;
       background-position: bottom;
     }
   }
@@ -21,7 +20,8 @@
       line-height: 2;
     }
     @include tablet-mode {
-      padding: 20px 100px;
+      margin: 0 auto;
+      width: 65%;
     }
     @include desktop-mode {
       padding: 20px 550px;

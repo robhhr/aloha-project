@@ -7,6 +7,21 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    @include tablet-mode {
+        text-align: left;
+    }
+}
+
+.footer-container {
+    @include tablet-mode {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+    a {
+        color: $white;
+    }
 }
 
 .footer-container a {
@@ -26,7 +41,13 @@
     line-height: 1.5rem;
     color: $shadow;
 }
-  
+
+.social-media {
+    @include tablet-mode {
+        line-height: 0;
+    }
+}
+
 .social-media p {
     display: none;
     @include tablet-mode {
@@ -39,7 +60,7 @@
 .social-media ul {
     display: flex;
     justify-content: center;
-    list-style: none;
+    // list-style: none;
     @include tablet-mode {
       flex-direction: column;
     }
@@ -47,6 +68,9 @@
 
 .social-media ul li {
     padding: 20px 10px;
+    @include tablet-mode {
+        padding: 10px 0;
+    }
 }
 
 @media screen and (min-width: 600px) {

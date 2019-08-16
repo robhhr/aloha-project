@@ -29,7 +29,7 @@
     font-size: 1.2rem;
     font-weight: 400;
     padding-bottom: 20px;
-    @include desktop-mode {
+    @include tablet-mode {
       font-size: 1.5rem;
     }
 }
@@ -37,7 +37,7 @@
 .spring-summer {
     font-size: 2.2rem;
     font-style: normal;
-    @include desktop-mode {
-      font-size: 3.5rem;
+    @include tablet-mode {
+      font-size: 3rem;
     }
 }
